@@ -13,16 +13,24 @@ nav { display: flex; justify-content: space-between; align-items: center; }
 .nav-links a:hover, .active { color: green; }
 
 /* Hero */
-.hero {
+ .hero {
   height: 90vh;
-  background: url('../images/hero.jpg') no-repeat center/cover;
-  display: flex; flex-direction: column; justify-content: center; align-items: center;
-  text-align: center; color: white;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
   animation: fadeIn 2s ease-in;
 }
+
 .hero button {
   margin-top: 20px; padding: 10px 20px; border: none;
-  background: #ff9800; color: #fff; cursor: pointer;
+  background: green; color: #fff; cursor: pointer;
   transition: transform 0.3s;
 }
 .hero button:hover { transform: scale(1.1); }
